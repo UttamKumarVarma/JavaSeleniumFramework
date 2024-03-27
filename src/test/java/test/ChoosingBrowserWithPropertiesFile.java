@@ -11,36 +11,33 @@ import pages.AppPage;
 
 public class ChoosingBrowserWithPropertiesFile {
 	public static WebDriver driver = null;
-	
+
 	public static void main(String[] args) {
-		
-		String browserName= PropertiesFile.getProperties();
+
+		String browserName = PropertiesFile.getProperties();
 		// TODO Auto-generated method stub
-	if(browserName.equalsIgnoreCase("chrome")){
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-	}
-	else if(browserName.equalsIgnoreCase("firefox")){
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
-	}
-	else {
-		//edge driver
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
-	}
-	openGoogle();
+		if (browserName.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		} else if (browserName.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		} else {
+			// edge driver
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}
+		openGoogle();
 
 	}
-	
+
 	public static void openGoogle() {
 		AppPage appPage = new AppPage(driver);
 		driver.get("https://google.com/");
 		driver.manage().window().maximize();
 		appPage.enterText("Mr.Ukv");
-		//Thread.sleep(5000);
-		
-		
+		// Thread.sleep(5000);
+
 	}
 
 }
