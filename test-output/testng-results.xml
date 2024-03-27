@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-26T19:42:21 CDT" name="Default suite" finished-at="2024-03-26T19:43:46 CDT" duration-ms="84938">
+    <groups>
+    </groups>
+    <test started-at="2024-03-26T19:42:21 CDT" name="Default test" finished-at="2024-03-26T19:43:46 CDT" duration-ms="84938">
+      <class name="test.TestNGAppTest2">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.TestNGAppTest2@75d3a5e0]" started-at="2024-03-26T19:42:21 CDT" name="browserSetup" finished-at="2024-03-26T19:43:39 CDT" duration-ms="78538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="test()[pri:0, instance:test.TestNGAppTest2@75d3a5e0]" started-at="2024-03-26T19:43:39 CDT" name="test" finished-at="2024-03-26T19:43:45 CDT" duration-ms="5864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.TestNGAppTest2@75d3a5e0]" started-at="2024-03-26T19:43:45 CDT" name="tearDown" finished-at="2024-03-26T19:43:46 CDT" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.TestNGAppTest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
