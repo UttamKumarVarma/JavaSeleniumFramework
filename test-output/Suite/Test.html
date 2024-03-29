@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 20 17:08:33 CDT 2024</td>
+<td>Started on:</td><td>Thu Mar 28 22:24:44 CDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55697 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (146 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,48 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestNGAppTest.browserSetup()'><b>browserSetup</b><br>Test class: test.TestNGAppTest</td>
-<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at test.TestNGAppTest.browserSetup(TestNGAppTest.java:23)
-Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
-	... 31 more
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1139814130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1139814130'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at test.TestNGAppTest.browserSetup(TestNGAppTest.java:23)
+<td title='listeners.TestNGListenerDemo2.test5()'><b>test5</b><br>Test class: listeners.TestNGListenerDemo2</td>
+<td><div><pre>java.lang.AssertionError: 
+	at listeners.TestNGListenerDemo2.test5(TestNGListenerDemo2.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace127791068", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace127791068'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+	at listeners.TestNGListenerDemo2.test5(TestNGListenerDemo2.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
-	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
@@ -131,21 +114,54 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
-	... 31 more
 </pre></div></td>
-<td>55</td>
-<td>test.TestNGAppTest@74ea2410</td></tr>
+<td>0</td>
+<td>listeners.TestNGListenerDemo2@6bbe85a8</td></tr>
+<tr>
+<td title='listeners.TestNGListenerDemo.test2()'><b>test2</b><br>Test class: listeners.TestNGListenerDemo</td>
+<td><div><pre>java.lang.AssertionError: 
+	at listeners.TestNGListenerDemo.test2(TestNGListenerDemo.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1604247316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1604247316'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+	at listeners.TestNGListenerDemo.test2(TestNGListenerDemo.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>listeners.TestNGListenerDemo@793f29ff</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -153,20 +169,15 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestNGAppTest2.browserSetup()'><b>browserSetup</b><br>Test class: test.TestNGAppTest2</td>
+<td title='listeners.TestNGListenerDemo.test1()'><b>test1</b><br>Test class: listeners.TestNGListenerDemo</td>
 <td></td>
 <td>0</td>
-<td>test.TestNGAppTest2@563f38c4</td></tr>
+<td>listeners.TestNGListenerDemo@793f29ff</td></tr>
 <tr>
-<td title='test.TestNGAppTest2.tearDown()'><b>tearDown</b><br>Test class: test.TestNGAppTest2</td>
+<td title='listeners.TestNGListenerDemo2.test4()'><b>test4</b><br>Test class: listeners.TestNGListenerDemo2</td>
 <td></td>
 <td>0</td>
-<td>test.TestNGAppTest2@563f38c4</td></tr>
-<tr>
-<td title='test.TestNGAppTest.tearDown()'><b>tearDown</b><br>Test class: test.TestNGAppTest</td>
-<td></td>
-<td>0</td>
-<td>test.TestNGAppTest@74ea2410</td></tr>
+<td>listeners.TestNGListenerDemo2@6bbe85a8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -177,48 +188,28 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestNGAppTest.test()'><b>test</b><br>Test class: test.TestNGAppTest</td>
-<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at test.TestNGAppTest.browserSetup(TestNGAppTest.java:23)
-Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
-	... 31 more
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace471640778", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace471640778'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at test.TestNGAppTest.browserSetup(TestNGAppTest.java:23)
+<td title='listeners.TestNGListenerDemo.test3()'><b>test3</b><br>Test class: listeners.TestNGListenerDemo</td>
+<td><div><pre>org.testng.SkipException: This test is skipped
+	at listeners.TestNGListenerDemo.test3(TestNGListenerDemo.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace788625466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace788625466'><pre>org.testng.SkipException: This test is skipped
+	at listeners.TestNGListenerDemo.test3(TestNGListenerDemo.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
-	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
@@ -232,61 +223,32 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
-	... 31 more
 </pre></div></td>
 <td>0</td>
-<td>test.TestNGAppTest@74ea2410</td></tr>
+<td>listeners.TestNGListenerDemo@793f29ff</td></tr>
 <tr>
-<td title='test.TestNGAppTest2.test()'><b>test</b><br>Test class: test.TestNGAppTest2</td>
-<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at test.TestNGAppTest.browserSetup(TestNGAppTest.java:23)
-Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
-	... 31 more
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1960757544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1960757544'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at test.TestNGAppTest.browserSetup(TestNGAppTest.java:23)
+<td title='listeners.TestNGListenerDemo2.test6()'><b>test6</b><br>Test class: listeners.TestNGListenerDemo2</td>
+<td><div><pre>org.testng.SkipException: This test is skipped
+	at listeners.TestNGListenerDemo2.test6(TestNGListenerDemo2.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace405896924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace405896924'><pre>org.testng.SkipException: This test is skipped
+	at listeners.TestNGListenerDemo2.test6(TestNGListenerDemo2.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
-	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
@@ -300,18 +262,9 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
-	... 31 more
 </pre></div></td>
 <td>0</td>
-<td>test.TestNGAppTest2@563f38c4</td></tr>
+<td>listeners.TestNGListenerDemo2@6bbe85a8</td></tr>
 </table><p>
 </body>
 </html>
