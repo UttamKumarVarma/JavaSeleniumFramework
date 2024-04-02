@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class AppPage {
@@ -19,5 +20,9 @@ public class AppPage {
 	public void enterText(String text) 
 	{
 		driver.findElement(textBox).sendKeys(text);
+	}
+	public void clickEnter() 
+	{
+		driver.findElement(textBox).sendKeys(Keys.RETURN);
 	}
 }

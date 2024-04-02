@@ -1,6 +1,5 @@
 package listeners;
 
-import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
