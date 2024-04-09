@@ -6,44 +6,91 @@ public class UttamScaler {
 
 	public static void main(String[] args) {
 
-		List<List<Integer>> uttam = new ArrayList<List<Integer>>();
+		int[] prices = { 1,4,2};
+		System.out.println("final value "+maxProfit(prices));
 
-		
-		int[] nums= {-1,0,1,2,-1,-4};
-		
-		for(int i=0;i<nums.length;i++){
-            for(int j=0;j<nums.length;j++){
-                for(int k=0;k<nums.length;k++){
-                    if(i !=j && i!=k && j!=k){
-                    	
-                    	if(i+j+k == 0) {
-                    	List<Integer> triplet = new ArrayList<Integer>();
-                        triplet.add(nums[i]);
-                        triplet.add(nums[j]);
-                        triplet.add(nums[k]);
-                        uttam.add(triplet);
-                    	}
-                    }
-                }
-            }
-        }
-		System.out.println(uttam);
 	}
+	
+	
+	public static int maxProfit(int[] prices) {
+	      List<Integer> pricesDuplicate = new ArrayList<Integer>();
+			for (int x : prices) {
+				pricesDuplicate.add(x);
+			}
 
-	public int[] twoSum(int[] nums, int target) {
+			int[] pricesOriginal = prices;
+			List<Integer> finalList = new ArrayList<Integer>();
+			int x, y, z = 0;
+			Integer o=null;
+			for (int i = 0; i < pricesDuplicate.size() - 1; i++) {
+				x = Math.min(pricesDuplicate.get(i), pricesDuplicate.get(i + 1));
+				y = Math.max(pricesDuplicate.get(i), pricesDuplicate.get(i + 1));
+				pricesDuplicate.set(i, y);
+				pricesDuplicate.set(i + 1, x);
+			}
+			x = pricesDuplicate.get(pricesDuplicate.size() - 1);
+			System.out.println("Smallest Value is " + x);
 
-		int[] output = new int[100];
-		int i, j;
-		for (i = 0; i < nums.length; i++) {
-			for (j = i + 1; j < nums.length; j++) {
-				if (nums[i] + nums[j] == target) {
-					output[0] = i;
-					output[1] = j;
+			int finalData = x;
+
+			for (int i = 0; i < pricesOriginal.length; i++) {
+				if (pricesOriginal[i] == x) {
+					z = i;
 					break;
 				}
 			}
-		}
 
-		return output;
-	}
+			if (z != pricesOriginal.length - 1) {
+
+				for (int i = z + 1; i < pricesOriginal.length; i++) {
+					finalList.add(pricesOriginal[i]);
+
+				}
+
+				
+				if(finalList.size()==1 && finalList.get(0)>x) {
+					System.out.println(1);
+	                return 1;
+				}
+				else if(finalList.get(0)<x){
+					System.out.println(0);
+					return 0;
+				}
+				
+				else {
+				for (int i = 0; i < finalList.size() - 1; i++) {
+					x = Math.max(finalList.get(i), finalList.get(i + 1));
+					y = Math.min(finalList.get(i), finalList.get(i + 1));
+					finalList.set(i, y);
+					finalList.set(i + 1, x);
+				}
+
+				if (finalList.get(finalList.size() - 1) > finalData) {
+
+					
+					
+					for(int i=0;i<prices.length;i++) {
+						if(prices[i]==finalList.get(finalList.size() - 1)) {
+							o=i+1;
+							break;
+						}
+					}
+					System.out.println(o);
+	                return o;
+					
+				} else {
+					System.out.println(0);
+	                return 0;
+				}
+				
+				}
+				
+				
+			} else {
+				System.out.println(0);
+	            return 0;
+			}
+	        
+	    }
+
 }
